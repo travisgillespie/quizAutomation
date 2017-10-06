@@ -1,4 +1,4 @@
-## Note 10-6-17:
+# Note 10-6-17:
 I'm currently writing the README.md file. It will be up to date within a few days.
 
 # Overview
