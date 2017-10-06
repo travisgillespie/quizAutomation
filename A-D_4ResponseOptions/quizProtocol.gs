@@ -23,7 +23,7 @@ function getQuestionPools() {
   var range = specificRange(constant, colStart, colEnd)
   var obj = valuesInRange('questions', range)
   var loopMax = constant.lastRow - constant.firstRow
-  var questionPoolIndex = valueFromHeaderTitle('questions', 'Question Pool', index)
+  var questionPoolIndex = valueFromHeaderTitle('questions', 'Question Pool', index,3)
   var answer,
       array = [0],
       uniqueArray = [],

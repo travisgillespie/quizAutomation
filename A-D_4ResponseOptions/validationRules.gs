@@ -64,6 +64,8 @@ function dataValidation(event) {
 
 function listArray() {
   //return array for drop-down list
+  var tabName = 'dataMappingQuetions';
+  var column = 'column'
   var sheetName = 'questions'
   var constants = objConstants(sheetName)
   var colQuestionType = constants.questionType
@@ -71,17 +73,20 @@ function listArray() {
   var cellCol = cellInActiveCellRow(colQuestionType); //questionType
   var cellColQuestionType = cellInActiveCellRow(colQuestionType); //questionType
   var cellValue = cellCol.getDisplayValue();
+  var ansSingle = colLetterFromValue(valueFromHeaderTitle(tabName,'Correct Answer - Single',column,1));
+  var ansMulti = colLetterFromValue(valueFromHeaderTitle(tabName,'Correct Answer - Multiple',column,1));
+  var ansTF = colLetterFromValue(valueFromHeaderTitle(tabName,'Correct Answer - T/F',column,1));
   var array;
 
   switch (cellValue) {
     case "Multiple Choice – Single Answer":
-      array = valuesInRange('dataMappingQuetions', 'F3:F23' ); //Correct Answer - Single
+      array = valuesInRange(tabName, ansSingle+'3:'+ansSingle+'40'); //Correct Answer - Single
       break;
     case "Multiple Choice – Multiple Answer":
-      array = valuesInRange('dataMappingQuetions', 'G3:G23' ); //Correct Answer - Multiple
+      array = valuesInRange(tabName, ansMulti+'3:'+ansMulti+'40'); //Correct Answer - Multiple
       break;
     case "True/False":
-      array = valuesInRange('dataMappingQuetions', 'H3:H23' ); //Correct Answer - T/F
+      array = valuesInRange(tabName, ansTF+'3:'+ansTF+'40'); //Correct Answer - T/F
       break;
     default:
       array = [''];

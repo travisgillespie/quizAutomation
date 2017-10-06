@@ -4,11 +4,11 @@ function timestamp() {
   return time
 }
 
-function valueFromHeaderTitle(sheetName, header, indexColumn) {
+function valueFromHeaderTitle(sheetName, header, indexColumn, row) {
   //returns a value based on the header string and whether need a value for an array index or spreadsheet column
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName(sheetName)
-  var range = sheet.getRange('a3:n3').getDisplayValues() //these are the headers
+  var range = sheet.getRange('a'+row+':ac'+row).getDisplayValues() //these are the headers
   var colValue;
   for (values in range)
   {
@@ -105,20 +105,20 @@ function objConstants(sheetName) {
   var obj = {
              firstRow: 6,
              lastRow: sheet.getLastRow(),
-             author: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Author',column)), //2: call function w/ an array of the alphabet... or return column number... and use that rather than calling a1 notation... this way my array becomes dynamic and i don't have to update the array if the worksheet changes
-             number: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Q. No.',column)),
-             topicName: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Sprinklr Platform Topic Name',column)),
-             videoName: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Video File Name',column)),
-             questionType: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Question Type',column)),
-             question: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Question',column)),
-             choiceA: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice A',column)),
-             choiceB: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice B',column)),
-             choiceC: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice C',column)),
-             choiceD: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice D',column)),
-             choiceE: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice E',column)),
-             answer: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Answer',column)),
-             explanation: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Answer Explanation',column)),
-             questionPool: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Question Pool',column))
+             author: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Author',column,3)), //2: call function w/ an array of the alphabet... or return column number... and use that rather than calling a1 notation... this way my array becomes dynamic and i don't have to update the array if the worksheet changes
+             number: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Q. No.',column,3)),
+             topicName: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Sprinklr Platform Topic Name',column,3)),
+             videoName: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Video File Name',column,3)),
+             questionType: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Question Type',column,3)),
+             question: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Question',column,3)),
+             choiceA: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice A',column,3)),
+             choiceB: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice B',column,3)),
+             choiceC: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice C',column,3)),
+             choiceD: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice D',column,3)),
+             choiceE: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Choice E',column,3)),
+             answer: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Answer',column,3)),
+             explanation: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Answer Explanation',column,3)),
+             questionPool: colLetterFromValue(valueFromHeaderTitle(sheetName, 'Question Pool',column,3))
             };
   return obj
 }

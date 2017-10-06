@@ -19,9 +19,9 @@ function cornerstoneAnswers(getSheet, obj, appendData, loopMax, timestamp){
   var responseOption = ['A','B','C','D'];
   var currentResponseChoice;
   var currentResponseOption;
-  var questionTypeIndex = valueFromHeaderTitle(sheetName, 'Question Type', index)
+  var questionTypeIndex = valueFromHeaderTitle(sheetName, 'Question Type', index,3)
   var questionType;
-  var correctAnswerIndex = valueFromHeaderTitle(sheetName, 'Answer', index)
+  var correctAnswerIndex = valueFromHeaderTitle(sheetName, 'Answer', index,3)
   var answer,
       arrayLength,
       responseOrder;
@@ -33,7 +33,7 @@ function cornerstoneAnswers(getSheet, obj, appendData, loopMax, timestamp){
       responseOrder = 0;
 
     for(var x = 0; x <= arrayLength; x++) {
-      currentResponseChoice = valueFromHeaderTitle(sheetName, 'Choice ' + responseOption[x], index)
+      currentResponseChoice = valueFromHeaderTitle(sheetName, 'Choice ' + responseOption[x], index,3)
       currentResponseOption = (x == 4) ? obj[i][correctAnswerIndex] : obj[i][currentResponseChoice]
 
       if (obj[i][currentResponseChoice] != ''){ // if responseOption[x] isn't blank

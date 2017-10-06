@@ -51,11 +51,11 @@ function cornerstoneQuestions(getSheet, obj, appendData, loopMax, timestamp, cat
   var sheetName = 'questions'
   var constants = objConstants(sheetName)
   var index = 'index'
-  var questionIndex = valueFromHeaderTitle(sheetName, 'Question', index)
-  var questionTypeIndex = valueFromHeaderTitle(sheetName, 'Question Type', index)
-  var correctAnswerIndex = valueFromHeaderTitle(sheetName, 'Answer', index)
-  var explanationIndex = valueFromHeaderTitle(sheetName, 'Answer Explanation', index)
-  var authorIndex = valueFromHeaderTitle(sheetName, 'Author', index)
+  var questionIndex = valueFromHeaderTitle(sheetName, 'Question', index, 3)
+  var questionTypeIndex = valueFromHeaderTitle(sheetName, 'Question Type', index, 3)
+  var correctAnswerIndex = valueFromHeaderTitle(sheetName, 'Answer', index, 3)
+  var explanationIndex = valueFromHeaderTitle(sheetName, 'Answer Explanation', index, 3)
+  var authorIndex = valueFromHeaderTitle(sheetName, 'Author', index, 3)
   var category = '' // i'm using this variable to override the function parameter value
 
   for (var i = 0; i<=loopMax; i++){

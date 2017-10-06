@@ -25,7 +25,7 @@ Navigate to the tab labeled <i>questions</i>. Fill out the spreadsheet with quiz
 
 |A-D|A-E|Note|
 |---|---|----|
-|Cell A1:||| 
+|Cell A1:|||
 |Column C|| Categorize questions.|
 |Column D|| Video files|
 |Column E|| Question Type will also set the answer chocikes in coloumn K.|
@@ -60,3 +60,7 @@ Navigate to the tab labeled <i>questions</i>. Fill out the spreadsheet with quiz
 ### open file and download as:
   * Cornerstone -> save as CSV
   * Captivate -> save as txt
+
+
+### Menu Bar Admin
+### Character Limits
