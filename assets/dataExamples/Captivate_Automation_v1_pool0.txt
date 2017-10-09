@@ -1,0 +1,30 @@
+﻿//#1 True/False: Analytics
+:: True/False
+:: A voluntary association can be said to be institutionalized when it develops a formal structure. {T}
+
+//#2 Multiple Choice – Single Answer: Benchmarking
+:: Multiple Choice
+:: Which of the following perspectives emphasizes the idea that people learn attitudes and roles through shared language? {
+~Psychoanalytical theory
+~Differential association theory
+~Structural theory
+=Symbolic interactionism
+}
+
+//#3 Multiple Choice – Multiple Answer: Core Admin Overview
+:: Multiple Choice
+:: Sociologists may conduct cross-cultural research, or research designed to reveal variations across different groups of people. Choose all of the methods of research that are involved: {
+=survey
+~crowd influence
+=direct observation
+=participant observation
+}
+
+//#4 Multiple Choice – Single Answer: Listening
+:: Multiple Choice
+:: A sociologist wants to study the attitudes of college students in the United States. The researcher contacts 1,000 students from colleges and universities all over the United States. These 1,000 students constitute the {
+~population
+=sample
+~median
+~control variable
+}
