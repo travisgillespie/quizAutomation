@@ -113,8 +113,7 @@ Navigate to the corresponding subfolder and open either the Captivate or Corners
 The questions tab has 4 example question that can be used to see how the program operates. This information can be removed altogether. However, any other changes made to either spreadsheet will require thoughtful consideration, because you will most likely have to make supporting changes within the script. Here are a few tips before getting started:
 
 * To rename the spreadsheet tab names:
-  <br>
-  <br>
+
   * Click the drop-down icon on the tab that will be renamed, then click <i>Rename</i>.
 
   * Navigate to the menu bar. Click <i>tools</i> and select <i>Script editor</i>. You will have to run across each script to locate the corresponding sheet names, and replace the strings with the names you create. Ideally I would have created an object that houses the sheet names in one location, but didn't consider this when first creating the app. If you consider doing this, the <i>reusable functions.gs</i> file is a good place to store the object.
