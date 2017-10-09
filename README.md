@@ -118,8 +118,6 @@ The questions tab has 4 example question that can be used to see how the program
   * Click the drop-down icon on the tab that will be renamed, then click <i>Rename</i>.
 
   * Navigate to the menu bar. Click <i>tools</i> and select <i>Script editor</i>. You will have to run across each script to locate the corresponding sheet names, and replace the strings with the names you create. Ideally I would have created an object that houses the sheet names in one location, but didn't consider this when first creating the app. If you consider doing this, the <i>reusable functions.gs</i> file is a good place to store the object.
-  <br>
-  <br>
 
 * Renaming Headers in the spreadsheet:
   * Navigate to the menu bar. Click <i>tools</i> and select <i>Script editor</i> and locate the <i>reusable functions.gs</i> file. Look for the object that houses the headers you replaced, and supply the new names in the respective locations. You might also have to search each script file to ensure all instances of the headers have been replaced.
