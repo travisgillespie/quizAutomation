@@ -30,7 +30,7 @@ Navigate to the tab labeled <i>questions</i>. Fill out the spreadsheet with quiz
 
 |A-D|A-E|Note|
 |---|---|----|
-|Cell A1|Cell A1|<span style="color:#d00c51"><i>Required</i></span>: select a value from the drop-down. This value will be used for titles after running the program. As stated previously, these values can be changed by following this path <i>dataMappaingQuestions</i> tab > Column B.|
+|Cell A1|Cell A1|<i>Required</i>: select a value from the drop-down. This value will be used for titles after running the program. As stated previously, these values can be changed by following this path <i>dataMappaingQuestions</i> tab > Column B.|
 |Column B|Column B|<i style="color:#d00c51">Required</i>: The question number of each problem.|
 |Column C|Column C|<i style="color:#d00c51">Required for CSoD only</i>: This value will be used for to further categorize each question after running the program. As stated previously, these values can be changed by following this path <i>dataMappaingQuestions</i> tab > Column E.|
 |Column D|Column D|<i style="color:#449c0d">Optional</i>: The file name of additional resources related to the problem.|
