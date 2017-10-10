@@ -1,7 +1,7 @@
 d# Overview
 This program automates the process of copying quiz questions from a spreadsheet and pasting them into Adobe Captivate or Cornerstone OnDemand (CSoD). This code has proven successful in decreasing a workload that would take hours to complete down to just a few minutes. There are two versions of this program. One version can be used for quizzes with 4 response options (<i>i.e.</i> A-D), and the other for quizzes with 5 response options (<i>i.e.</i> A-E). You will need a Google account to run this program.
 
-[![Google Sheets png](./assets/images/quizTemplateA-D.png?raw=true "Google Sheets")](https://drive.google.com/file/d/0B5w_Rm6Jrg-PZXRPMzhYUUJqNU0)
+[![Google Sheets png](./assets/images/quizTemplateA-D.png?raw=true "Google Sheets")](https://drive.google.com/file/d/0B5w_Rm6Jrg-PZXRPMzhYUUJqNU0/preview)
 
 # Initial Setup
 
